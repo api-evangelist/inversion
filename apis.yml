@@ -1,8 +1,15 @@
 aid: inversion
 name: Inversion
-description: 'Inversion is a company surfaced as a portfolio company of spark-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: aerospace. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Inversion is a Los Angeles-based aerospace and defense company founded in 2021 by Austin
+  Briggs and Justin Fiaschetti, building a new class of highly maneuverable reentry vehicles. Its flagship
+  Arc is an autonomous, reusable, low-cost space-based delivery vehicle designed to store cargo in orbit
+  and deliver it with precision to anywhere on Earth in under an hour, descending under parachutes using
+  non-toxic propellants so crews can approach it immediately on landing. The company also develops hypersonics
+  and space-based interceptor technology and flew its first reentry capsule, Ray, as an early technical
+  demonstrator. Inversion has raised roughly $54M to date, including a $44M Series A led by Spark Capital
+  and Adjacent with participation from Lockheed Martin Ventures, Kindred Ventures, and Y Combinator. It
+  does not currently publish a public developer API; this profile tracks the company for the API Evangelist
+  network.'
 url: https://raw.githubusercontent.com/api-evangelist/inversion/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +17,31 @@ x-backed-by:
 - spark-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.sanity.io/images/aqhlygr6/production/6fa855806fd19d1b44b1fa53114264a8f310ddc5-3840x2160.jpg
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Aerospace
+- Defense
+- Space
+- Reentry Vehicles
+- Cargo Delivery
+- Hypersonics
+- National Security
+- Spacecraft
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/inversion-domain-security.yml
 - type: Website
   url: https://www.inversionspace.com
+- type: Blog
+  url: https://www.inversionspace.com/news
+- type: LinkedIn
+  url: https://www.linkedin.com/company/inversion-space
+- type: Twitter
+  url: https://x.com/InversionSpace
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
